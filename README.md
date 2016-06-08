@@ -8,14 +8,14 @@
 npm install --save-dev win-rar
 ```
 ## 注意：
-- <font color=red>此模块在运行时必须在管理员权限下运行cmd命令。</font>
-- 此模块只能用于windows系统，会自动检测系统中的winRar软件的安装目录，并把对应目录添加到系统的环境变量中。
-- 介意以上内容，请考虑使用其它组件。
+- 此模块只能用于windows系统
+- 自动检测系统中的winRar软件的安装目录
+- 并尝试把对应目录添加到系统的环境变量
 
 ## 示例
-
+### 异步方法
 ```js
-var winRar = require('win-rar');
+var winRar = require('win-rar').aync;
 var rar=new winRar({
    inDir:'F:\\csharp',
    outDir:'F:\\csharp',
@@ -26,6 +26,20 @@ var rar=new winRar({
    filter:function(name){return true}
 });
 rar.compress();
+```
+### 同步方法
+```js
+var winRar = require('win-rar').sync;
+var rar=new winRar({
+   inDir:'F:\\csharp',
+   outDir:'F:\\csharp',
+   name:'good.rar',
+   cwd:'F:\\csharp',
+   cmd:'a',
+   ny:['-r0'],
+   filter:function(name){return true}
+});
+rar.compress();  
 ```
 ### 参数
 - inDir:需要压缩的文件目录
@@ -152,10 +166,6 @@ x@<列表> 排除在指定的列表文件中列出的文件
 y 假设对全部询问都回答是 
 z[文件] 从文件读取压缩文件注释 
 ```
-
-
-
-
 
 ## License
 
