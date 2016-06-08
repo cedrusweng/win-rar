@@ -1,0 +1,41 @@
+{
+  "name": "win-rar",
+  "version": "0.0.2",
+  "description": "这是一个调用windows系统安装winRar软件命令的组件，完成文件的压缩功能。",
+  "keywords": [
+    "rar",
+    "winrar"
+  ],
+  "homepage": "https://github.com/cedrusweng/win-rar",
+  "bugs": {
+    "url": "https://github.com/cedrusweng/win-rar/issues"
+  },
+  "author": {
+    "name": "wengxuesong",
+    "url": "https://github.com/cedrusweng"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cedrusweng/win-rar.git"
+  },
+  "scripts": {
+    "test": "no test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "extend": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=0.9"
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "wengxuesong",
+      "email": "wengxuesong@126.com"
+    }
+  ],
+  "directories": {},
+  "readme": "ERROR: No README data found!"
+}
