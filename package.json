@@ -1,7 +1,7 @@
 {
   "name": "win-rar",
-  "version": "0.0.6",
-  "description": "这是一个调用windows系统安装winRar软件命令的组件，完成文件的压缩功能。",
+  "version": "0.0.9",
+  "description": "调用windows下winRar软件，完成文件的压缩功能。",
   "keywords": [
     "rar",
     "winrar"
@@ -38,6 +38,5 @@
       "email": "wengxuesong@126.com"
     }
   ],
-  "directories": {},
-  "readme": "README.md"
+  "directories": {}
 }

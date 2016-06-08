@@ -1,12 +1,16 @@
 # node实现winRar压缩
 
-## Install
+## 安装
 
 安装 [npm](https://npmjs.org/package/win-rar).
 
 ```
 npm install --save-dev win-rar
 ```
+## 注意：
+- <font color=red>此模块在运行时必须在管理员权限下运行cmd命令。</font>
+- 此模块只能用于windows系统，会自动检测系统中的winRar软件的安装目录，并把对应目录添加到系统的环境变量中。
+- 介意以上内容，请考虑使用其它组件。
 
 ## 示例
 
@@ -23,14 +27,14 @@ var rar=new winRar({
 });
 rar.compress();
 ```
-### 参数options各项含义:
-> inDir:需要压缩的文件目录
-> outDir:输出目录
-> name:输出的文件名及格式
-> cwd:运行目录，一般与inDir相同
-> cmd:winRar对应的命令名
-> ny:winRar对应的开关
-> filter:用于排除inDir目录下对应的目录或文件，参数name为目录名或文件名（包含格式），返回false为排除
+### 参数
+- inDir:需要压缩的文件目录
+- outDir:输出目录
+- name:输出的文件名及格式
+- cwd:运行目录，一般与inDir相同
+- cmd:winRar对应的命令名
+- ny:winRar对应的开关
+- filter:用于排除inDir目录下对应的目录或文件，参数name为目录名或文件名（包含格式），返回false为排除
 
 ## winRar命令
 ```
@@ -149,9 +153,7 @@ y 假设对全部询问都回答是
 z[文件] 从文件读取压缩文件注释 
 ```
 
-## 注意：
-此模块只能用于windows系统，会自动检测系统中的winRar软件的安装目录，并把对应目录添加到系统的环境变量中。
-如很介意这样的设置，请考虑使用其它组件。
+
 
 
 
