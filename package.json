@@ -1,6 +1,6 @@
 {
   "name": "win-rar",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "这是一个调用windows系统安装winRar软件命令的组件，完成文件的压缩功能。",
   "keywords": [
     "rar",
@@ -22,7 +22,9 @@
   "scripts": {
     "test": "no test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "extend": "^3.0.0"
+  },
   "devDependencies": {
     "extend": "^3.0.0"
   },
@@ -37,5 +39,5 @@
     }
   ],
   "directories": {},
-  "readme": "ERROR: No README data found!"
+  "readme": "README.md"
 }
