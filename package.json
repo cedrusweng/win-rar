@@ -1,6 +1,6 @@
 {
   "name": "win-rar",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "调用windows下winRar软件，完成文件的压缩功能。",
   "keywords": [
     "rar",
