@@ -1,11 +1,12 @@
 {
   "name": "win-rar",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "调用windows下winRar软件，完成文件的压缩功能。",
   "keywords": [
     "rar",
     "winrar"
   ],
+  "winrarPath":"C:/Program Files/WinRAR",
   "homepage": "https://github.com/cedrusweng/win-rar",
   "bugs": {
     "url": "https://github.com/cedrusweng/win-rar/issues"

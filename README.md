@@ -5,13 +5,16 @@
 安装 [npm](https://npmjs.org/package/win-rar).
 
 ```
-npm install --save-dev win-rar
+npm install win-rar
 ```
 ## 注意：
 - 此模块只能用于windows系统
 - 自动检测系统中的winRar软件的安装目录
-- 并尝试把对应目录添加到系统的环境变量
-
+- 
+## 更新
+   v 1.0.0
+      - 去掉把对应目录添加到系统的环境变量
+      - 改为执行 rar 执行环境设置为系统中winRar的目录中
 ## 示例
 ### 异步方法
 ```js
